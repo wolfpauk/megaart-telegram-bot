@@ -1,0 +1,20 @@
+{
+  "name": "megaart-telegram-webhook",
+  "version": "1.0.0",
+  "description": "Telegram webhook for MegaArt Sales Manager",
+  "main": "api/webhook.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required'",
+    "start": "node api/webhook.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "keywords": ["telegram", "bot", "webhook", "megaart"],
+  "author": "BMAD Agent Generator",
+  "license": "MIT"
+}
