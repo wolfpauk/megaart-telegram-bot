@@ -4,6 +4,10 @@ const TelegramBot = require('node-telegram-bot-api');
 // Bot token from environment variables
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 
+if (!BOT_TOKEN) {
+  console.error('TELEGRAM_BOT_TOKEN is not set!');
+}
+
 // Create bot instance without polling (webhook mode)
 const bot = new TelegramBot(BOT_TOKEN);
 
